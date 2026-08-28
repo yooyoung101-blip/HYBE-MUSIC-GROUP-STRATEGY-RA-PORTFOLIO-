@@ -1,0 +1,1 @@
+Preserve the current portfolio source while the opening-page loader removes the deprecated OPEN INDEX control and cache-busts V7 assets.
