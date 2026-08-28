@@ -282,3 +282,41 @@ if(initial&&order.includes(initial)){
   current=initial;routes.forEach(r=>r.classList.toggle('active',r.dataset.routePage===initial));
 }
 syncIndex();setupReveal(activePage());updateProgress();
+
+/* Opening-page refinement */
+const opening=document.querySelector('[data-route-page="home"]');
+const openingEnter=opening?.querySelector('.home-bottom .enter');
+if(openingEnter) openingEnter.remove();
+const openingCopy=opening?.querySelector('.home-bottom p');
+if(openingCopy){
+  openingCopy.innerHTML='<span>글로벌 음악 시장의 규모, K-pop의 해외 소비, 팬덤의 구매 행동, DSP의 발견 구조를 같은 리서치 흐름 안에서 검토했습니다.</span><span>각 수치에는 <b>출처·기간·정의</b>를 붙였고, 공개자료로 확인할 수 없는 항목은 내부 데이터 요청으로 남겼습니다.</span>';
+}
+const openingStyle=document.createElement('style');
+openingStyle.textContent=`
+[data-route-page="home"] .hero-title,
+[data-route-page="home"] .hero-line,
+[data-route-page="home"] .home-topline,
+[data-route-page="home"] .home-bottom{
+  font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Apple SD Gothic Neo","Noto Sans KR",Arial,sans-serif !important;
+}
+[data-route-page="home"] .hero-title .hero-line{
+  font-weight:600 !important;
+  letter-spacing:-.062em !important;
+  background:none !important;
+  -webkit-background-clip:initial !important;
+  background-clip:initial !important;
+  -webkit-text-fill-color:currentColor !important;
+  text-shadow:none !important;
+}
+[data-route-page="home"] .hero-title .hero-line:first-child{color:#f1f2f3 !important;}
+[data-route-page="home"] .hero-title .hero-line.metal{color:#aeb3b9 !important;}
+[data-route-page="home"] .home-bottom{grid-template-columns:1fr !important;}
+[data-route-page="home"] .home-bottom p{max-width:760px !important;line-height:1.72 !important;letter-spacing:-.018em !important;}
+[data-route-page="home"] .home-bottom p>span{display:block;}
+[data-route-page="home"] .home-bottom p>span+span{margin-top:.55em;}
+@media(max-width:720px){
+  [data-route-page="home"] .hero-title .hero-line{font-size:clamp(52px,15vw,86px) !important;line-height:.9 !important;}
+  [data-route-page="home"] .home-bottom p{font-size:12px !important;line-height:1.75 !important;}
+}
+`;
+document.head.appendChild(openingStyle);
