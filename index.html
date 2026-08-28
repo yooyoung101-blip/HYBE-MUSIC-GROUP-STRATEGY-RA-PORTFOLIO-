@@ -10,7 +10,7 @@
 <body>
 <script>
 (async()=>{
-  const html=await fetch('index-source.html?v=14',{cache:'no-store'}).then(r=>r.text());
+  const html=await fetch('index-source.html?v=15',{cache:'no-store'}).then(r=>r.text());
   const doc=new DOMParser().parseFromString(html,'text/html');
 
   const opening=doc.querySelector('[data-route-page="home"]');
@@ -26,24 +26,28 @@
     copy.innerHTML='<span>글로벌 음악 시장의 규모, K-pop의 해외 소비, 팬덤의 구매 행동, DSP의 발견 구조를 같은 리서치 흐름 안에서 검토했습니다.</span><span>각 수치에는 <b>출처·기간·정의</b>를 붙였고, 공개자료로 확인할 수 없는 항목은 내부 데이터 요청으로 남겼습니다.</span>';
   }
 
-  doc.querySelector('link[href^="styles.css"]')?.setAttribute('href','styles.css?v=14');
-  doc.querySelector('link[href^="v7.css"]')?.setAttribute('href','v7.css?v=14');
-  doc.querySelector('script[src^="v7.js"]')?.setAttribute('src','v7.js?v=14');
+  doc.querySelector('link[href^="styles.css"]')?.setAttribute('href','styles.css?v=15');
+  doc.querySelector('link[href^="v7.css"]')?.setAttribute('href','v7.css?v=15');
+  doc.querySelector('script[src^="v7.js"]')?.setAttribute('src','v7.js?v=15');
 
   const tuideCss=doc.createElement('link');
   tuideCss.rel='stylesheet';
-  tuideCss.href='tuide.css?v=14';
+  tuideCss.href='tuide.css?v=15';
   doc.head.appendChild(tuideCss);
 
   const v7Script=doc.querySelector('script[src^="v7.js"]');
   if(v7Script){
     const tuideScript=doc.createElement('script');
-    tuideScript.src='tuide-pre.js?v=14';
+    tuideScript.src='tuide-pre.js?v=15';
     v7Script.parentNode.insertBefore(tuideScript,v7Script);
 
     const copyFixScript=doc.createElement('script');
-    copyFixScript.src='tuide-copyfix.js?v=14';
+    copyFixScript.src='tuide-copyfix.js?v=15';
     v7Script.parentNode.insertBefore(copyFixScript,v7Script);
+
+    const polishScript=doc.createElement('script');
+    polishScript.src='copy-polish.js?v=15';
+    v7Script.parentNode.insertBefore(polishScript,v7Script);
   }
 
   const openingStyle=doc.createElement('style');
