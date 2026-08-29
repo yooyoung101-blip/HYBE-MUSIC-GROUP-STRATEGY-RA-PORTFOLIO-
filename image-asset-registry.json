@@ -1,0 +1,83 @@
+{
+  "policy": {
+    "version": "18e",
+    "generated_ai_images": false,
+    "duplicate_originals_allowed": false,
+    "same_original_different_crop_counts_as_duplicate": true,
+    "fallback_must_be_unique_for_same_artist": true
+  },
+  "assets": [
+    {
+      "artist": "TUIDE",
+      "role": "hero",
+      "asset_id": "TUIDE-HERO-SBS-20260803",
+      "primary": "https://img.sbs.co.kr/newsnet/etv/upload/2026/08/03/30001078725.jpg",
+      "fallback": "https://i.ytimg.com/vi/dmx4lrSuRX8/maxresdefault.jpg",
+      "source": "SBS real group photo / official SUN KISS MV Teaser 2 fallback"
+    },
+    {
+      "artist": "TUIDE",
+      "role": "competitive-comparison",
+      "asset_id": "TUIDE-COMPARE-WEPLAY",
+      "primary": "https://i.ytimg.com/vi/gZoIV96ipIk/maxresdefault.jpg",
+      "fallback": null,
+      "source": "Official STEP TWO — WE PLAY #TUIDE video thumbnail"
+    },
+    {
+      "artist": "TUIDE",
+      "role": "historical-benchmark",
+      "asset_id": "TUIDE-BENCHMARK-STEPTHREE",
+      "primary": "https://i.ytimg.com/vi/OeMwAsRgtS4/maxresdefault.jpg",
+      "fallback": null,
+      "source": "Official STEP THREE — How we TUNE & PLAY #TUIDE video thumbnail"
+    },
+    {
+      "artist": "TUIDE",
+      "role": "music-video",
+      "asset_id": "TUIDE-SUNKISS-MV",
+      "primary": "https://www.youtube-nocookie.com/embed/46h0LvDHgIs",
+      "fallback": null,
+      "source": "Official SUN KISS MV"
+    },
+    {
+      "artist": "TUIDE",
+      "role": "predebut-video",
+      "asset_id": "TUIDE-GRLS-VIDEO",
+      "primary": "https://www.youtube-nocookie.com/embed/pHciG9_2xXM",
+      "fallback": null,
+      "source": "Official Meet my GRLS, TUIDE video"
+    },
+    {
+      "artist": "OURBIRTHDAY",
+      "role": "competitive-comparison",
+      "asset_id": "OURBIRTHDAY-COMPARE-IDNTIMES",
+      "primary": "https://image.idntimes.com/post/20260810/ot7-900x605_16240960-a204-4cca-b5ee-8dbba1752fa6.jpg?tr=w-1200",
+      "fallback": "https://i.ytimg.com/vi/sJKiaojk-to/maxresdefault.jpg",
+      "source": "IDN Times real group photo / Mnet real stage thumbnail fallback"
+    },
+    {
+      "artist": "OURBIRTHDAY",
+      "role": "historical-benchmark",
+      "asset_id": "OURBIRTHDAY-BENCHMARK-TEASER1",
+      "primary": "https://i.ytimg.com/vi/0B809sqOuDE/maxresdefault.jpg",
+      "fallback": "https://i.ytimg.com/vi/7Yz32duW5us/maxresdefault.jpg",
+      "source": "Official SQUEEZY MV Teaser 1 / official Stage Practice fallback"
+    },
+    {
+      "artist": "TWS",
+      "role": "hero",
+      "asset_id": "TWS-HERO-NOTRAGEDY",
+      "primary": "existing Weverse NO TRAGEDY official group image",
+      "fallback": null,
+      "source": "Weverse official group photo"
+    },
+    {
+      "artist": "TWS",
+      "role": "japan-debut-benchmark",
+      "asset_id": "TWS-JAPAN-BENCHMARK-PHOTO-B",
+      "primary": "https://phinf.wevpstatic.net/MjAyNTA1MTVfODYg/MDAxNzQ3MzA0MTcyMzcw.mF7k1_SjAyKTAlmLfirzUi-GCOKiuWxm_zIEpLQNN3cg.RpPmGqJmhSooMiKPe_PBoKT5AkiSCNGNNpv0mjADQ4sg.JPEG/bf0b7ea2-9785-4480-8710-e621d8311238.jpeg?type=w670",
+      "fallback": "https://phinf.wevpstatic.net/MjAyNTA1MTRfMTUy/MDAxNzQ3MjI1NDUyNDc0.z9FsGtoTi0Cki8_f65aRqYI3yvbqXjtrxaH8LIECBgEg.2ZGY0BSz-aK3u9wqHlTRqAdfdql9wpsWEGKm0vBq2VYg.PNG/f5ded2aa-d31f-41c6-bdea-d7ac758a7ece.png?type=w670",
+      "source": "Weverse TWS JAPAN 1st Single Official Photo B / Photo A fallback"
+    }
+  ]
+}
