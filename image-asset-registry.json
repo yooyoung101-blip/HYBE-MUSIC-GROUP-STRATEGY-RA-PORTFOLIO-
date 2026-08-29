@@ -1,40 +1,46 @@
 {
   "policy": {
-    "version": "18e",
+    "version": "18e-visual-final",
     "generated_ai_images": false,
     "duplicate_originals_allowed": false,
     "same_original_different_crop_counts_as_duplicate": true,
-    "fallback_must_be_unique_for_same_artist": true
+    "same_video_thumbnail_and_first_frame_counts_as_duplicate": true,
+    "fallback_must_be_unique_for_same_artist": true,
+    "source_of_truth": "strategy-v18e-image-guard.js"
   },
   "assets": [
     {
       "artist": "TUIDE",
       "role": "hero",
       "asset_id": "TUIDE-HERO-SBS-20260803",
+      "original_visual": "ABD 7-member debut visual / colorful studio letters",
       "primary": "https://img.sbs.co.kr/newsnet/etv/upload/2026/08/03/30001078725.jpg",
       "fallback": "https://i.ytimg.com/vi/dmx4lrSuRX8/maxresdefault.jpg",
-      "source": "SBS real group photo / official SUN KISS MV Teaser 2 fallback"
+      "source": "ABD / SBS"
     },
     {
       "artist": "TUIDE",
       "role": "competitive-comparison",
       "asset_id": "TUIDE-COMPARE-WEPLAY",
+      "original_visual": "STEP TWO — WE PLAY / Thailand street visual",
       "primary": "https://i.ytimg.com/vi/gZoIV96ipIk/maxresdefault.jpg",
       "fallback": null,
-      "source": "Official STEP TWO — WE PLAY #TUIDE video thumbnail"
+      "source": "ABD official STEP TWO — WE PLAY"
     },
     {
       "artist": "TUIDE",
       "role": "historical-benchmark",
-      "asset_id": "TUIDE-BENCHMARK-STEPTHREE",
-      "primary": "https://i.ytimg.com/vi/OeMwAsRgtS4/maxresdefault.jpg",
-      "fallback": null,
-      "source": "Official STEP THREE — How we TUNE & PLAY #TUIDE video thumbnail"
+      "asset_id": "TUIDE-BENCHMARK-BRIGHT-CONCEPT",
+      "original_visual": "WE PLAY bright outdoor concept group photo",
+      "primary": "https://cdn-assets.jawapos.com/images/1/2026/08/16/tuide-x-at-kchartsmaster-GBTr6.webp",
+      "fallback": "https://i.ytimg.com/vi/r0KCLM79ab8/maxresdefault.jpg",
+      "source": "ABD promotional group photo / official SUN KISS Teaser 1 fallback"
     },
     {
       "artist": "TUIDE",
       "role": "music-video",
       "asset_id": "TUIDE-SUNKISS-MV",
+      "original_visual": "SUN KISS official MV",
       "primary": "https://www.youtube-nocookie.com/embed/46h0LvDHgIs",
       "fallback": null,
       "source": "Official SUN KISS MV"
@@ -43,6 +49,7 @@
       "artist": "TUIDE",
       "role": "predebut-video",
       "asset_id": "TUIDE-GRLS-VIDEO",
+      "original_visual": "Meet my GRLS, TUIDE official video",
       "primary": "https://www.youtube-nocookie.com/embed/pHciG9_2xXM",
       "fallback": null,
       "source": "Official Meet my GRLS, TUIDE video"
@@ -50,18 +57,22 @@
     {
       "artist": "OURBIRTHDAY",
       "role": "competitive-comparison",
-      "asset_id": "OURBIRTHDAY-COMPARE-IDNTIMES",
-      "primary": "https://image.idntimes.com/post/20260810/ot7-900x605_16240960-a204-4cca-b5ee-8dbba1752fa6.jpg?tr=w-1200",
-      "fallback": "https://i.ytimg.com/vi/sJKiaojk-to/maxresdefault.jpg",
-      "source": "IDN Times real group photo / Mnet real stage thumbnail fallback"
+      "asset_id": "OURBIRTHDAY-COMPARE-UPLOADED-A",
+      "original_visual": "Uploaded 7-member close group portrait / white background",
+      "primary": "assets/ourbirthday/ourbirthday-compare.webp",
+      "fallback": null,
+      "source": "User-supplied real 7-member group photo A",
+      "crop": {"desktop":"center 42%","tablet":"center 43%","mobile":"center 44%"}
     },
     {
       "artist": "OURBIRTHDAY",
       "role": "historical-benchmark",
-      "asset_id": "OURBIRTHDAY-BENCHMARK-TEASER1",
-      "primary": "https://i.ytimg.com/vi/0B809sqOuDE/maxresdefault.jpg",
-      "fallback": "https://i.ytimg.com/vi/7Yz32duW5us/maxresdefault.jpg",
-      "source": "Official SQUEEZY MV Teaser 1 / official Stage Practice fallback"
+      "asset_id": "OURBIRTHDAY-BENCHMARK-UPLOADED-B",
+      "original_visual": "Uploaded 7-member blue OBD group photo",
+      "primary": "assets/ourbirthday/ourbirthday-benchmark.webp",
+      "fallback": null,
+      "source": "User-supplied real 7-member group photo B",
+      "crop": {"desktop":"center 46%","tablet":"center 47%","mobile":"center 48%"}
     },
     {
       "artist": "ILLIT",
