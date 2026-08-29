@@ -32,11 +32,11 @@
     });
 
     set($('.tuide-compare img[alt="TUIDE group from official video thumbnail"]', tuide), {
-      id:'TUIDE-COMPARE-WEPLAY', artist:'TUIDE', section:'Compare',
-      originalVisual:'STEP TWO — WE PLAY / Thailand street visual',
-      primary:'https://i.ytimg.com/vi/gZoIV96ipIk/maxresdefault.jpg',
-      fallback:null,
-      source:'ABD official STEP TWO — WE PLAY'
+      id:'TUIDE-COMPARE-SCOUT-GROUP-C', artist:'TUIDE', section:'Compare',
+      originalVisual:'7-member scout-uniform bench group portrait / TUNE THE TIDE ASSOCIATION',
+      primary:'https://pub-dc9a9c6ac2a64ba48bce426ced0ac56a.r2.dev/groups/tuide/profile.png?v=1786378994346',
+      fallback:'https://e.usen.com/image/06.%20TUIDE.jpg',
+      source:'User-supplied real TUIDE group visual / public image mirror'
     });
 
     set($('.ssp-tuide-reference img[alt="TUIDE group"]', tuide), {
@@ -69,8 +69,8 @@
 
   if (!window.__OBD_COMPARE_VISUAL__ || !window.__OBD_BENCHMARK_VISUAL__) {
     await Promise.all([
-      window.__OBD_COMPARE_VISUAL__ ? Promise.resolve() : loadDataScript('assets/ourbirthday/compare-data.js?v=18f'),
-      window.__OBD_BENCHMARK_VISUAL__ ? Promise.resolve() : loadDataScript('assets/ourbirthday/benchmark-data.js?v=18f')
+      window.__OBD_COMPARE_VISUAL__ ? Promise.resolve() : loadDataScript('assets/ourbirthday/compare-data.js?v=18g'),
+      window.__OBD_BENCHMARK_VISUAL__ ? Promise.resolve() : loadDataScript('assets/ourbirthday/benchmark-data.js?v=18g')
     ]);
   }
 
@@ -92,5 +92,5 @@
     });
   }
 
-  document.documentElement.dataset.imageRegistry = '18f-visual-final';
+  document.documentElement.dataset.imageRegistry = '18g-visual-final';
 })();
