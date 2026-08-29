@@ -64,12 +64,36 @@
       "source": "Official SQUEEZY MV Teaser 1 / official Stage Practice fallback"
     },
     {
+      "artist": "ILLIT",
+      "role": "historical-benchmark",
+      "asset_id": "ILLIT-BENCHMARK-SPOTIFY",
+      "primary": "https://i.scdn.co/image/ab6761610000e5eb7fabcc2491d95050faa5b710",
+      "fallback": "https://i.ytimg.com/vi/Vk5-c_v4gMU/maxresdefault.jpg",
+      "source": "Spotify artist image / official real-artist video thumbnail fallback"
+    },
+    {
+      "artist": "Hearts2Hearts",
+      "role": "historical-benchmark",
+      "asset_id": "H2H-BENCHMARK-HEARST",
+      "primary": "https://hips.hearstapps.com/hmg-prod/images/74e60814-fc0d-403c-b7ea-ae54b8abf1ff.png",
+      "fallback": "https://i.ytimg.com/vi/kxUA2wwYiME/maxresdefault.jpg",
+      "source": "Hearst real group photo / official real-artist video thumbnail fallback"
+    },
+    {
+      "artist": "KiiiKiii",
+      "role": "historical-benchmark",
+      "asset_id": "KIIIKIII-BENCHMARK-VOGUE-TW",
+      "primary": "https://media.vogue.com.tw/photos/69a9447ab69552aa6bc781ef/master/w_2560%2Cc_limit/Copy%2520of%2520%25E2%2598%2585KiiiKiii-I%2520DO%2520ME-MAIN%2520ARTIST%2520IMAGE.jpg",
+      "fallback": "https://i.ytimg.com/vi/UAdxlj4Cgjw/maxresdefault.jpg",
+      "source": "Vogue Taiwan real group image / official real-artist video thumbnail fallback"
+    },
+    {
       "artist": "TWS",
       "role": "hero",
       "asset_id": "TWS-HERO-NOTRAGEDY",
-      "primary": "existing Weverse NO TRAGEDY official group image",
+      "primary": "https://phinf.wevpstatic.net/MjAyNjA0MDZfNjUg/MDAxNzc1NDY4MjE5MTI5.5uDmNuiXwS2ObLYf_BRgbkOTOcIKaVy_ArnHrf1BzZkg.MnstUo6KhZ8fx90ZBP3p86XlIXZ8ms_kMP-nnUhmYR0g.JPEG/c9686f1f-82dd-4082-8b67-1a8106e205e4.jpeg",
       "fallback": null,
-      "source": "Weverse official group photo"
+      "source": "Weverse NO TRAGEDY official group photo"
     },
     {
       "artist": "TWS",
@@ -78,6 +102,22 @@
       "primary": "https://phinf.wevpstatic.net/MjAyNTA1MTVfODYg/MDAxNzQ3MzA0MTcyMzcw.mF7k1_SjAyKTAlmLfirzUi-GCOKiuWxm_zIEpLQNN3cg.RpPmGqJmhSooMiKPe_PBoKT5AkiSCNGNNpv0mjADQ4sg.JPEG/bf0b7ea2-9785-4480-8710-e621d8311238.jpeg?type=w670",
       "fallback": "https://phinf.wevpstatic.net/MjAyNTA1MTRfMTUy/MDAxNzQ3MjI1NDUyNDc0.z9FsGtoTi0Cki8_f65aRqYI3yvbqXjtrxaH8LIECBgEg.2ZGY0BSz-aK3u9wqHlTRqAdfdql9wpsWEGKm0vBq2VYg.PNG/f5ded2aa-d31f-41c6-bdea-d7ac758a7ece.png?type=w670",
       "source": "Weverse TWS JAPAN 1st Single Official Photo B / Photo A fallback"
+    },
+    {
+      "artist": "BOYNEXTDOOR",
+      "role": "japan-debut-benchmark",
+      "asset_id": "BND-JAPAN-BENCHMARK-TEENVOGUE",
+      "primary": "https://assets.teenvogue.com/photos/68933cdfc02e2ed6db782950/1%3A1/w_1849%2Ch_1849%2Cc_limit/BOYNEXTDOOR_01.jpg",
+      "fallback": "https://i.ytimg.com/vi/pvG71IuqdX0/maxresdefault.jpg",
+      "source": "Teen Vogue real group photo / official real-artist video thumbnail fallback"
+    },
+    {
+      "artist": "NCT WISH",
+      "role": "japan-debut-benchmark",
+      "asset_id": "NCTWISH-JAPAN-BENCHMARK-DONGA",
+      "primary": "https://dimg.donga.com/wps/NEWS/IMAGE/2025/04/14/131407390.1.jpg",
+      "fallback": "https://i.ytimg.com/vi/hvQZs3k6Ytk/maxresdefault.jpg",
+      "source": "DongA real group photo / official real-artist video thumbnail fallback"
     }
   ]
 }
