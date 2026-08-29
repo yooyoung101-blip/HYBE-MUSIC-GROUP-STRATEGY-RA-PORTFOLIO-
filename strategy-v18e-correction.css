@@ -1,0 +1,39 @@
+/* V18E FINAL CORRECTION — definitions, source consistency, image dedupe */
+.fp-single-axis-map .fp-map-wrap{min-height:420px}
+.fp-single-axis-map .fp-map{height:240px;margin:34px 24px 0 24px;border-left:0;background-size:25% 100%;background-image:linear-gradient(90deg,rgba(255,255,255,.055) 1px,transparent 1px)}
+.fp-single-axis-map .fp-y-label,.fp-single-axis-map .fp-y-ticks{display:none!important}
+.fp-single-axis-map .fp-map-point{bottom:50%!important}
+.fp-single-axis-map .fp-map-point:before{content:'';position:absolute;left:6px;top:6px;width:1px;height:42px;background:linear-gradient(rgba(220,225,230,.28),transparent);transform:translateY(-100%);pointer-events:none}
+.fp-single-axis-map .fp-map-tooltip{top:72px}
+.fp-provider-note{flex-basis:100%;margin-top:4px;color:#59626b;font:500 7px/1.5 var(--display);letter-spacing:.09em;text-transform:uppercase}
+.fp-role-coverage .fp-scene-head small{color:#6f7780}
+.fp-role-coverage .fp-role-output{margin-bottom:0}
+
+/* Keep image planes editorial; correction layer only controls fit/crop. */
+[data-route-page="tuide"] .tuide-compare img,
+[data-route-page="tuide"] .ssp-tuide-reference img,
+[data-route-page="tws"] .ssp-tws-benchmark img{object-fit:cover;object-position:center}
+[data-route-page="tuide"] .ssp-tuide-reference img[alt="TUIDE group"]{object-position:center 38%}
+[data-route-page="tuide"] .ssp-tuide-reference img[alt="OURBIRTHDAY group"]{object-position:center 42%}
+[data-route-page="tws"] .ssp-tws-benchmark img[alt="TWS group"]{object-position:center 34%}
+
+@media(max-width:1024px){
+  .fp-single-axis-map .fp-map-wrap{min-height:390px}
+  .fp-single-axis-map .fp-map{height:225px;margin-left:18px;margin-right:18px}
+}
+@media(max-width:760px){
+  .fp-single-axis-map .fp-map-wrap{min-height:370px;padding:16px 14px 54px}
+  .fp-single-axis-map .fp-map{height:210px;margin:28px 10px 0;background-size:33.333% 100%}
+  .fp-single-axis-map .fp-map-title{display:block;line-height:1.55}
+  .fp-single-axis-map .fp-map-title span{display:block;margin-top:6px}
+  .fp-single-axis-map .fp-x-label{bottom:-38px;font-size:6px;letter-spacing:.04em}
+  .fp-single-axis-map .fp-map-point strong{font-size:9px}
+  .fp-single-axis-map .fp-map-point small{font-size:7px}
+  .fp-provider-note{font-size:6px;line-height:1.55}
+  [data-route-page="tuide"] .ssp-tuide-reference img[alt="TUIDE group"],
+  [data-route-page="tuide"] .ssp-tuide-reference img[alt="OURBIRTHDAY group"],
+  [data-route-page="tws"] .ssp-tws-benchmark img[alt="TWS group"]{object-position:center}
+}
+@media(prefers-reduced-motion:reduce){
+  .fp-single-axis-map .fp-map-point{transition:none!important}
+}
