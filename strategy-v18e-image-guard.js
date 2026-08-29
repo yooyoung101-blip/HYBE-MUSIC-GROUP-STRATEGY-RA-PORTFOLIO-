@@ -2,7 +2,7 @@
   const $ = (s, r=document) => r.querySelector(s);
 
   const set = (img, spec) => {
-    if (!img || !spec) return;
+    if (!img || !spec || !spec.primary) return;
     img.dataset.assetId = spec.id;
     img.dataset.artist = spec.artist;
     img.dataset.section = spec.section;
@@ -40,17 +40,17 @@
     });
 
     set($('.ssp-tuide-reference img[alt="TUIDE group"]', tuide), {
-      id:'TUIDE-BENCHMARK-BRIGHT-CONCEPT', artist:'TUIDE', section:'Benchmark',
-      originalVisual:'WE PLAY bright outdoor concept group photo',
-      primary:'https://cdn-assets.jawapos.com/images/1/2026/08/16/tuide-x-at-kchartsmaster-GBTr6.webp',
+      id:'TUIDE-BENCHMARK-WEPLAY-BRIGHT', artist:'TUIDE', section:'Benchmark',
+      originalVisual:'WE PLAY bright outdoor seven-member group photo',
+      primary:'https://e.usen.com/image/06.%20TUIDE.jpg',
       fallback:'https://i.ytimg.com/vi/r0KCLM79ab8/maxresdefault.jpg',
-      source:'ABD promotional group photo / official SUN KISS Teaser 1 fallback'
+      source:'ABD-provided WE PLAY promotional group photo / USEN'
     });
 
     set($('.tuide-compare img[alt="OURBIRTHDAY seven-member group"]', tuide), {
       id:'OURBIRTHDAY-COMPARE-UPLOADED-A', artist:'OURBIRTHDAY', section:'Compare',
       originalVisual:'Uploaded 7-member close group portrait / white background',
-      primary:'assets/ourbirthday/ourbirthday-compare.webp',
+      primary:window.__OBD_COMPARE_VISUAL__,
       fallback:null,
       source:'User-supplied real 7-member group photo A'
     });
@@ -58,7 +58,7 @@
     set($('.ssp-tuide-reference img[alt="OURBIRTHDAY group"]', tuide), {
       id:'OURBIRTHDAY-BENCHMARK-UPLOADED-B', artist:'OURBIRTHDAY', section:'Benchmark',
       originalVisual:'Uploaded 7-member blue OBD group photo',
-      primary:'assets/ourbirthday/ourbirthday-benchmark.webp',
+      primary:window.__OBD_BENCHMARK_VISUAL__,
       fallback:null,
       source:'User-supplied real 7-member group photo B'
     });
@@ -75,5 +75,5 @@
     });
   }
 
-  document.documentElement.dataset.imageRegistry = '18e-visual-final';
+  document.documentElement.dataset.imageRegistry = '18f-visual-final';
 })();
