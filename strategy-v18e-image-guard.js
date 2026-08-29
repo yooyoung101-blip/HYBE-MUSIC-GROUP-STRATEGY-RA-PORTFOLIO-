@@ -1,4 +1,4 @@
-(() => {
+(async() => {
   const $ = (s, r=document) => r.querySelector(s);
 
   const set = (img, spec) => {
@@ -46,7 +46,35 @@
       fallback:'https://i.ytimg.com/vi/r0KCLM79ab8/maxresdefault.jpg',
       source:'ABD-provided WE PLAY promotional group photo / USEN'
     });
+  }
 
+  const tws = $('[data-route-page="tws"]');
+  if (tws) {
+    set($('.ssp-tws-benchmark img[alt="TWS group"]', tws), {
+      id:'TWS-JAPAN-BENCHMARK-PHOTO-B', artist:'TWS', section:'Japan benchmark',
+      originalVisual:'TWS JAPAN 1st Single Official Photo B',
+      primary:'https://phinf.wevpstatic.net/MjAyNTA1MTVfODYg/MDAxNzQ3MzA0MTcyMzcw.mF7k1_SjAyKTAlmLfirzUi-GCOKiuWxm_zIEpLQNN3cg.RpPmGqJmhSooMiKPe_PBoKT5AkiSCNGNNpv0mjADQ4sg.JPEG/bf0b7ea2-9785-4480-8710-e621d8311238.jpeg?type=w670',
+      fallback:'https://phinf.wevpstatic.net/MjAyNTA1MTRfMTUy/MDAxNzQ3MjI1NDUyNDc0.z9FsGtoTi0Cki8_f65aRqYI3yvbqXjtrxaH8LIECBgEg.2ZGY0BSz-aK3u9wqHlTRqAdfdql9wpsWEGKm0vBq2VYg.PNG/f5ded2aa-d31f-41c6-bdea-d7ac758a7ece.png?type=w670',
+      source:'Weverse official photo B / photo A fallback'
+    });
+  }
+
+  const loadDataScript = src => new Promise(resolve => {
+    const s = document.createElement('script');
+    s.src = src;
+    s.onload = resolve;
+    s.onerror = resolve;
+    document.head.appendChild(s);
+  });
+
+  if (!window.__OBD_COMPARE_VISUAL__ || !window.__OBD_BENCHMARK_VISUAL__) {
+    await Promise.all([
+      window.__OBD_COMPARE_VISUAL__ ? Promise.resolve() : loadDataScript('assets/ourbirthday/compare-data.js?v=18f'),
+      window.__OBD_BENCHMARK_VISUAL__ ? Promise.resolve() : loadDataScript('assets/ourbirthday/benchmark-data.js?v=18f')
+    ]);
+  }
+
+  if (tuide) {
     set($('.tuide-compare img[alt="OURBIRTHDAY seven-member group"]', tuide), {
       id:'OURBIRTHDAY-COMPARE-UPLOADED-A', artist:'OURBIRTHDAY', section:'Compare',
       originalVisual:'Uploaded 7-member close group portrait / white background',
@@ -61,17 +89,6 @@
       primary:window.__OBD_BENCHMARK_VISUAL__,
       fallback:null,
       source:'User-supplied real 7-member group photo B'
-    });
-  }
-
-  const tws = $('[data-route-page="tws"]');
-  if (tws) {
-    set($('.ssp-tws-benchmark img[alt="TWS group"]', tws), {
-      id:'TWS-JAPAN-BENCHMARK-PHOTO-B', artist:'TWS', section:'Japan benchmark',
-      originalVisual:'TWS JAPAN 1st Single Official Photo B',
-      primary:'https://phinf.wevpstatic.net/MjAyNTA1MTVfODYg/MDAxNzQ3MzA0MTcyMzcw.mF7k1_SjAyKTAlmLfirzUi-GCOKiuWxm_zIEpLQNN3cg.RpPmGqJmhSooMiKPe_PBoKT5AkiSCNGNNpv0mjADQ4sg.JPEG/bf0b7ea2-9785-4480-8710-e621d8311238.jpeg?type=w670',
-      fallback:'https://phinf.wevpstatic.net/MjAyNTA1MTRfMTUy/MDAxNzQ3MjI1NDUyNDc0.z9FsGtoTi0Cki8_f65aRqYI3yvbqXjtrxaH8LIECBgEg.2ZGY0BSz-aK3u9wqHlTRqAdfdql9wpsWEGKm0vBq2VYg.PNG/f5ded2aa-d31f-41c6-bdea-d7ac758a7ece.png?type=w670',
-      source:'Weverse official photo B / photo A fallback'
     });
   }
 
