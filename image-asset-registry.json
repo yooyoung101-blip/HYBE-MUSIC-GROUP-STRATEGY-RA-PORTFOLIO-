@@ -1,6 +1,6 @@
 {
   "policy": {
-    "version": "18f-visual-final",
+    "version": "18g-visual-final",
     "generated_ai_images": false,
     "duplicate_originals_allowed": false,
     "same_original_different_crop_counts_as_duplicate": true,
@@ -21,11 +21,12 @@
     {
       "artist": "TUIDE",
       "role": "competitive-comparison",
-      "asset_id": "TUIDE-COMPARE-WEPLAY",
-      "original_visual": "STEP TWO — WE PLAY / Thailand street visual",
-      "primary": "https://i.ytimg.com/vi/gZoIV96ipIk/maxresdefault.jpg",
-      "fallback": null,
-      "source": "ABD official STEP TWO — WE PLAY"
+      "asset_id": "TUIDE-COMPARE-SCOUT-GROUP-C",
+      "original_visual": "7-member scout-uniform bench group portrait / TUNE THE TIDE ASSOCIATION",
+      "primary": "https://pub-dc9a9c6ac2a64ba48bce426ced0ac56a.r2.dev/groups/tuide/profile.png?v=1786378994346",
+      "fallback": "https://e.usen.com/image/06.%20TUIDE.jpg",
+      "source": "User-supplied real TUIDE group visual / public image mirror",
+      "fit": "contain"
     },
     {
       "artist": "TUIDE",
@@ -72,7 +73,7 @@
       "primary": "embedded:assets/ourbirthday/benchmark-data.js",
       "fallback": null,
       "source": "User-supplied real 7-member group photo B",
-      "crop": {"desktop":"center 46%","tablet":"center 47%","mobile":"center 48%"}
+      "fit": "contain"
     },
     {
       "artist": "ILLIT",
