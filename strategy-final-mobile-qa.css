@@ -1,0 +1,30 @@
+/* V18 final mobile/tablet readability QA */
+@media(max-width:760px){
+  .fp-map-read>p{font-size:11px;line-height:1.78}
+  .fp-map-read>span{font-size:8px}
+  .fp-y-label{font-size:7.5px;letter-spacing:.08em}
+  .fp-y-ticks{font-size:7px}
+  .fp-x-label{font-size:7px;letter-spacing:.045em}
+  .fp-map-tooltip dd{font-size:10px;line-height:1.6}
+  .fp-method-note{font-size:10.5px;line-height:1.75}
+
+  .fp-qual-meta span{font-size:7.5px}
+  .fp-qual-meta b{font-size:18px}
+  .fp-qual-meta p{font-size:10.5px;line-height:1.65}
+  .fp-market-tag{font-size:8.5px}
+  .fp-code strong{font-size:18px}
+  .fp-code span{font-size:9px;line-height:1.35}
+  .fp-motivation-flow small{font-size:7.5px}
+  .fp-motivation-flow b{font-size:14px;line-height:1.4}
+  .fp-motivation-flow p{font-size:10.5px;line-height:1.72}
+  .fp-qual-methodology span{font-size:7.5px}
+  .fp-qual-methodology p{font-size:10.5px;line-height:1.72}
+  .fp-factor-rail p{font-size:10.5px;line-height:1.75}
+  .fp-factor-rail article>div span{font-size:9.5px}
+  .fp-role-rail span{font-size:10.5px;line-height:1.65}
+}
+
+@media(min-width:761px) and (max-width:1100px){
+  .fp-motivation-flow p,.fp-qual-methodology p,.fp-factor-rail p{font-size:10px}
+  .fp-role-rail span{font-size:10.5px}
+}
