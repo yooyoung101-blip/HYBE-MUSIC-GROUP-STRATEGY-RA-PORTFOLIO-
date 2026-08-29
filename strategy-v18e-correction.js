@@ -2,10 +2,7 @@
   const $ = (s, r=document) => r.querySelector(s);
   const $$ = (s, r=document) => [...r.querySelectorAll(s)];
 
-  /* ---------------------------------------------------------
-     01. TUIDE POSITIONING — correct Melon D30 definition
-     and remove cross-provider MV ranking.
-  --------------------------------------------------------- */
+  /* TUIDE positioning — keep final data-definition correction. */
   const pos = $('[data-route-page="tuide"] .fp-tuide-positioning');
   if (pos) {
     const headSmall = $('.fp-scene-head small', pos);
@@ -89,9 +86,7 @@
     if (method) method.textContent = 'Melon D30은 D+30 retention을 뜻하지 않습니다. 발매 후 30일 이내 곡을 대상으로 하는 Hot100 범위입니다. 현재 map은 동일 캘린더 시점의 chart presence만 표시합니다.';
   }
 
-  /* ---------------------------------------------------------
-     02. RESEARCH SYSTEM — remove job-posting checklist framing.
-  --------------------------------------------------------- */
+  /* Research-system label — keep job-posting checklist hidden. */
   const role = $('.fp-role-coverage');
   if (role) {
     const head = $('.fp-scene-head', role);
@@ -106,91 +101,9 @@
     });
   }
 
-  /* ---------------------------------------------------------
-     03. IMAGE REGISTRY — unique role per visual.
-     AI/generated assets are not used.
-  --------------------------------------------------------- */
-  const setUniqueImage = (img, src, fallback, assetId, sourceLabel) => {
-    if (!img) return;
-    img.dataset.fallbackApplied = '1'; // disables older generic fallback listener
-    img.dataset.assetId = assetId;
-    img.dataset.photoSource = sourceLabel;
-    img.removeAttribute('onerror');
-    img.src = src;
-    img.onerror = null;
-    if (fallback) {
-      img.addEventListener('error', () => {
-        if (img.dataset.uniqueFallback === '1') return;
-        img.dataset.uniqueFallback = '1';
-        img.src = fallback;
-      }, { once:true });
-    }
-  };
-
-  const tuide = $('[data-route-page="tuide"]');
-  if (tuide) {
-    const hero = $('.tuide-hero-media img', tuide);
-    if (hero) {
-      hero.dataset.assetId = 'TUIDE-HERO-SBS-20260803';
-      hero.dataset.photoSource = 'SBS / real group photo';
-      hero.removeAttribute('onerror');
-      hero.onerror = null;
-      hero.addEventListener('error', () => {
-        if (hero.dataset.uniqueFallback === '1') return;
-        hero.dataset.uniqueFallback = '1';
-        hero.src = 'https://i.ytimg.com/vi/dmx4lrSuRX8/maxresdefault.jpg';
-      }, { once:true });
-    }
-
-    const compareTuide = $('.tuide-compare img[alt="TUIDE group from official video thumbnail"]', tuide);
-    setUniqueImage(compareTuide,
-      'https://i.ytimg.com/vi/gZoIV96ipIk/maxresdefault.jpg',
-      null,
-      'TUIDE-COMPARE-WEPLAY',
-      'Official STEP TWO — WE PLAY #TUIDE video thumbnail'
-    );
-
-    const benchmarkTuide = $('.ssp-tuide-reference img[alt="TUIDE group"]', tuide);
-    setUniqueImage(benchmarkTuide,
-      'https://i.ytimg.com/vi/OeMwAsRgtS4/maxresdefault.jpg',
-      null,
-      'TUIDE-BENCHMARK-STEPTHREE',
-      'Official STEP THREE — How we TUNE & PLAY #TUIDE video thumbnail'
-    );
-
-    const compareObd = $('.tuide-compare img[alt="OURBIRTHDAY seven-member group"]', tuide);
-    if (compareObd) {
-      compareObd.dataset.fallbackApplied = '1';
-      compareObd.dataset.assetId = 'OURBIRTHDAY-COMPARE-IDNTIMES';
-      compareObd.dataset.photoSource = 'IDN Times real group photo';
-      compareObd.removeAttribute('onerror');
-      compareObd.onerror = null;
-      compareObd.addEventListener('error', () => {
-        if (compareObd.dataset.uniqueFallback === '1') return;
-        compareObd.dataset.uniqueFallback = '1';
-        compareObd.src = 'https://i.ytimg.com/vi/sJKiaojk-to/maxresdefault.jpg';
-      }, { once:true });
-    }
-
-    const benchmarkObd = $('.ssp-tuide-reference img[alt="OURBIRTHDAY group"]', tuide);
-    setUniqueImage(benchmarkObd,
-      'https://i.ytimg.com/vi/0B809sqOuDE/maxresdefault.jpg',
-      'https://i.ytimg.com/vi/7Yz32duW5us/maxresdefault.jpg',
-      'OURBIRTHDAY-BENCHMARK-TEASER1',
-      'Official SQUEEZY M/V Teaser 1 thumbnail'
-    );
-  }
-
+  /* Image src/fallback ownership is intentionally centralized in strategy-v18e-image-guard.js. */
   const tws = $('[data-route-page="tws"]');
   if (tws) {
-    const japanBenchmark = $('.ssp-tws-benchmark img[alt="TWS group"]', tws);
-    setUniqueImage(japanBenchmark,
-      'https://phinf.wevpstatic.net/MjAyNTA1MTVfODYg/MDAxNzQ3MzA0MTcyMzcw.mF7k1_SjAyKTAlmLfirzUi-GCOKiuWxm_zIEpLQNN3cg.RpPmGqJmhSooMiKPe_PBoKT5AkiSCNGNNpv0mjADQ4sg.JPEG/bf0b7ea2-9785-4480-8710-e621d8311238.jpeg?type=w670',
-      'https://phinf.wevpstatic.net/MjAyNTA1MTRfMTUy/MDAxNzQ3MjI1NDUyNDc0.z9FsGtoTi0Cki8_f65aRqYI3yvbqXjtrxaH8LIECBgEg.2ZGY0BSz-aK3u9wqHlTRqAdfdql9wpsWEGKm0vBq2VYg.PNG/f5ded2aa-d31f-41c6-bdea-d7ac758a7ece.png?type=w670',
-      'TWS-JAPAN-BENCHMARK-PHOTO-B',
-      'Weverse TWS JAPAN 1st Single Official Photo B'
-    );
-
     const heroBg = $('.tws-photo', tws);
     if (heroBg) {
       heroBg.dataset.assetId = 'TWS-HERO-NOTRAGEDY';
@@ -198,5 +111,5 @@
     }
   }
 
-  document.documentElement.dataset.finalCorrection = '18e';
+  document.documentElement.dataset.finalCorrection = '18e-visual-final';
 })();
