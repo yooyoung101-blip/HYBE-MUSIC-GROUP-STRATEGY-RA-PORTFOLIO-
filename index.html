@@ -88,6 +88,10 @@
     const correctionScript=doc.createElement('script');
     correctionScript.src='strategy-v18e-correction.js?v=18e';
     v7Script.parentNode.insertBefore(correctionScript,v7Script);
+
+    const imageGuardScript=doc.createElement('script');
+    imageGuardScript.src='strategy-v18e-image-guard.js?v=18e';
+    v7Script.parentNode.insertBefore(imageGuardScript,v7Script);
   }
 
   const openingStyle=doc.createElement('style');
