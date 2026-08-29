@@ -19,11 +19,30 @@
 [data-route-page="tuide"] .ssp-tuide-reference img[alt="OURBIRTHDAY group"]{object-position:center 46%}
 [data-route-page="tws"] .ssp-tws-benchmark img[alt="TWS group"]{object-position:center 34%}
 
+/* V18G VISUAL QA — face visibility comes before decorative darkening. */
+[data-route-page="tuide"] .tuide-compare .tuide-artist-photo img{
+  filter:grayscale(.05) brightness(.96) contrast(1.01)!important;
+}
+[data-route-page="tuide"] .tuide-compare .tuide-artist:hover img{
+  filter:grayscale(0) brightness(1) contrast(1.01)!important;
+}
+/* The supplied TUIDE scout portrait is a wide seven-member frame. Keep all members visible. */
+[data-route-page="tuide"] .tuide-compare img[alt="TUIDE group from official video thumbnail"]{
+  object-fit:contain!important;
+  object-position:center!important;
+  background:#0a0c0f;
+}
+/* OURBIRTHDAY benchmark B is also wide. Do not sacrifice edge members to a square crop. */
+[data-route-page="tuide"] .ssp-tuide-reference img[alt="OURBIRTHDAY group"]{
+  object-fit:contain!important;
+  object-position:center!important;
+  background:#090b0e;
+}
+
 @media(max-width:1024px){
   .fp-single-axis-map .fp-map-wrap{min-height:390px}
   .fp-single-axis-map .fp-map{height:225px;margin-left:18px;margin-right:18px}
   [data-route-page="tuide"] .tuide-compare img[alt="OURBIRTHDAY seven-member group"]{object-position:center 43%}
-  [data-route-page="tuide"] .ssp-tuide-reference img[alt="OURBIRTHDAY group"]{object-position:center 47%}
 }
 @media(max-width:760px){
   .fp-single-axis-map .fp-map-wrap{min-height:370px;padding:16px 14px 54px}
@@ -34,11 +53,10 @@
   .fp-single-axis-map .fp-map-point strong{font-size:9px}
   .fp-single-axis-map .fp-map-point small{font-size:7px}
   .fp-provider-note{font-size:6px;line-height:1.55}
-  [data-route-page="tuide"] .tuide-compare img[alt="TUIDE group from official video thumbnail"]{object-position:center 45%}
   [data-route-page="tuide"] .ssp-tuide-reference img[alt="TUIDE group"]{object-position:center 42%}
   [data-route-page="tuide"] .tuide-compare img[alt="OURBIRTHDAY seven-member group"]{object-position:center 44%}
-  [data-route-page="tuide"] .ssp-tuide-reference img[alt="OURBIRTHDAY group"]{object-position:center 48%}
   [data-route-page="tws"] .ssp-tws-benchmark img[alt="TWS group"]{object-position:center 36%}
+  [data-route-page="tuide"] .tuide-compare .tuide-artist-photo{background:#0a0c0f}
 }
 @media(prefers-reduced-motion:reduce){
   .fp-single-axis-map .fp-map-point{transition:none!important}
