@@ -62,5 +62,27 @@
     if(tryLink) tryLink.textContent='TRY WITH US / HANTEO DATA VIA SOOMPI ↗';
   }
 
-  document.documentElement.dataset.finalQa='18c';
+  /* Real-artist-only fallbacks for media-CDN failures. */
+  const imageFallbacks={
+    'OURBIRTHDAY group':'https://i.ytimg.com/vi/sJKiaojk-to/maxresdefault.jpg',
+    'OURBIRTHDAY seven-member group':'https://i.ytimg.com/vi/sJKiaojk-to/maxresdefault.jpg',
+    'ILLIT group':'https://i.ytimg.com/vi/Vk5-c_v4gMU/maxresdefault.jpg',
+    'Hearts2Hearts group':'https://i.ytimg.com/vi/kxUA2wwYiME/maxresdefault.jpg',
+    'KiiiKiii group':'https://i.ytimg.com/vi/UAdxlj4Cgjw/maxresdefault.jpg',
+    'BOYNEXTDOOR group':'https://i.ytimg.com/vi/pvG71IuqdX0/maxresdefault.jpg',
+    'NCT WISH group':'https://i.ytimg.com/vi/hvQZs3k6Ytk/maxresdefault.jpg'
+  };
+  $$('img[alt]').forEach(img=>{
+    const fallback=imageFallbacks[img.alt];
+    if(!fallback)return;
+    const first=img.src;
+    img.addEventListener('error',()=>{
+      if(img.dataset.fallbackApplied)return;
+      img.dataset.fallbackApplied='1';
+      img.src=fallback;
+      img.dataset.primarySrc=first;
+    },{once:true});
+  });
+
+  document.documentElement.dataset.finalQa='18e';
 })();
