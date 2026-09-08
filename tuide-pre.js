@@ -41,12 +41,12 @@
       <section class="tuide-hero reveal-up">
         <figure class="tuide-hero-media">
           <img
-            src="assets/images/tuide-tune-play-full.jpeg"
+            src="https://img.sbs.co.kr/newsnet/etv/upload/2026/08/03/30001078725.jpg"
             alt="TUIDE seven-member group"
             loading="eager"
-            onerror="this.onerror=null;this.src='assets/images/tuide-tune-play-wide.jpeg';"
+            onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/pHciG9_2xXM/maxresdefault.jpg';"
           >
-          <figcaption>REAL ARTIST PHOTO · TUIDE_ABD OFFICIAL UPLOADED ASSET · fallback: uploaded wide frame</figcaption>
+          <figcaption>REAL ARTIST PHOTO · ABD (HYBE) / SBS · fallback: official HYBE LABELS video thumbnail</figcaption>
         </figure>
         <div class="tuide-hero-copy">
           <span class="tuide-kicker">HYBE MUSIC GROUP / NEW LABEL ENTRY</span>
@@ -180,7 +180,7 @@
         <div class="tuide-compare-intro">
           <article class="tuide-artist">
             <div class="tuide-artist-photo">
-              <img src="assets/images/tuide-tune-play-wide.jpeg" alt="TUIDE group from official video thumbnail" loading="lazy">
+              <img src="https://i.ytimg.com/vi/pHciG9_2xXM/maxresdefault.jpg" alt="TUIDE group from official video thumbnail" loading="lazy">
             </div>
             <div><span>HYBE / ABD</span><h3>TUIDE</h3><p>7 members · debut 24 Aug 2026</p></div>
           </article>
