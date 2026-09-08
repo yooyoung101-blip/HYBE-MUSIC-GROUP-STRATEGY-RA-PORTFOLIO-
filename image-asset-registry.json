@@ -1,6 +1,6 @@
 {
   "policy": {
-    "version": "18h-internet-originals",
+    "version": "18j-uploaded-tuide-assets",
     "generated_ai_images": false,
     "duplicate_originals_allowed": false,
     "same_original_different_crop_counts_as_duplicate": true,
@@ -12,29 +12,32 @@
     {
       "artist": "TUIDE",
       "role": "hero",
-      "asset_id": "TUIDE-HERO-SBS-20260803",
-      "original_visual": "ABD 7-member debut visual / colorful studio letters",
-      "primary": "https://img.sbs.co.kr/newsnet/etv/upload/2026/08/03/30001078725.jpg",
-      "fallback": "https://i.ytimg.com/vi/dmx4lrSuRX8/maxresdefault.jpg",
-      "source": "ABD / SBS"
+      "asset_id": "TUIDE-HERO-TUNEPLAY-UPLOADED-FULL",
+      "original_visual": "TUNE & PLAY seven-member bench portrait / uploaded official image",
+      "primary": "assets/images/tuide-tune-play-full.jpeg",
+      "fallback": "assets/images/tuide-tune-play-wide.jpeg",
+      "source": "User-supplied TUIDE official image asset",
+      "source_asset": "assets/images/tuide-bts-instagram-source.jpeg"
     },
     {
       "artist": "TUIDE",
       "role": "competitive-comparison",
-      "asset_id": "TUIDE-COMPARE-WEPLAY-USEN-04",
-      "original_visual": "WE PLAY promotional seven-member group photo / alternate frame",
-      "primary": "https://e.usen.com/image/04.%20TUIDE.jpg",
-      "fallback": "https://i.ytimg.com/vi/gZoIV96ipIk/maxresdefault.jpg",
-      "source": "ABD-provided TUIDE promotional group photo / USEN"
+      "asset_id": "TUIDE-COMPARE-TUNEPLAY-UPLOADED-WIDE",
+      "original_visual": "TUNE & PLAY seven-member wide bench portrait / uploaded official image",
+      "primary": "assets/images/tuide-tune-play-wide.jpeg",
+      "fallback": "assets/images/tuide-tune-play-full.jpeg",
+      "source": "User-supplied TUIDE official image asset",
+      "source_asset": "assets/images/tuide-bts-instagram-source.jpeg"
     },
     {
       "artist": "TUIDE",
       "role": "historical-benchmark",
-      "asset_id": "TUIDE-BENCHMARK-SCOUT-BENCH-HQ",
-      "original_visual": "7-member scout-uniform bench group portrait / TUNE THE TIDE ASSOCIATION",
-      "primary": "https://pub-dc9a9c6ac2a64ba48bce426ced0ac56a.r2.dev/groups/tuide/profile.png?v=1786378994346",
-      "fallback": "https://e.usen.com/image/06.%20TUIDE.jpg",
-      "source": "TUIDE scout-session public high-resolution image mirror"
+      "asset_id": "TUIDE-BENCHMARK-TUNEPLAY-UPLOADED-FULL",
+      "original_visual": "TUNE & PLAY seven-member bench portrait / uploaded official image",
+      "primary": "assets/images/tuide-tune-play-full.jpeg",
+      "fallback": "assets/images/tuide-tune-play-wide.jpeg",
+      "source": "User-supplied TUIDE official image asset; official Instagram capture stored in repository",
+      "source_asset": "assets/images/tuide-bts-instagram-source.jpeg"
     },
     {
       "artist": "TUIDE",

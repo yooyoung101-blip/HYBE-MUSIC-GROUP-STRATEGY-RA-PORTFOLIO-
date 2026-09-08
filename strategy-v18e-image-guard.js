@@ -30,30 +30,30 @@
   const specs = {
     tuideHero: {
       selector: '.tuide-hero-media img',
-      id:'TUIDE-HERO-SBS-20260803', artist:'TUIDE', section:'Hero',
-      originalVisual:'ABD 7-member debut visual / colorful studio letters',
-      primary:'https://img.sbs.co.kr/newsnet/etv/upload/2026/08/03/30001078725.jpg',
-      fallback:'https://i.ytimg.com/vi/dmx4lrSuRX8/maxresdefault.jpg',
-      source:'ABD / SBS',
-      sourcePage:'https://news.sbs.co.kr/english/article.do?cooper=SBSNEWSEND&news_id=N1008687557&oaid=N1008694910&plink=POP'
+      id:'TUIDE-HERO-TUNEPLAY-UPLOADED-FULL', artist:'TUIDE', section:'Hero',
+      originalVisual:'TUNE & PLAY seven-member bench portrait / uploaded official image',
+      primary:'assets/images/tuide-tune-play-full.jpeg',
+      fallback:'assets/images/tuide-tune-play-wide.jpeg',
+      source:'User-supplied TUIDE official image asset',
+      sourcePage:'assets/images/tuide-bts-instagram-source.jpeg'
     },
     tuideCompare: {
       selector: '.tuide-compare img[alt="TUIDE group from official video thumbnail"]',
-      id:'TUIDE-COMPARE-WEPLAY-USEN-04', artist:'TUIDE', section:'Compare',
-      originalVisual:'WE PLAY promotional seven-member group photo / alternate frame',
-      primary:'https://e.usen.com/image/04.%20TUIDE.jpg',
-      fallback:'https://i.ytimg.com/vi/gZoIV96ipIk/maxresdefault.jpg',
-      source:'ABD-provided TUIDE promotional group photo / USEN',
-      sourcePage:'https://e.usen.com/news/news-release/tuide-1st-ep-tune-play.html'
+      id:'TUIDE-COMPARE-TUNEPLAY-UPLOADED-WIDE', artist:'TUIDE', section:'Compare',
+      originalVisual:'TUNE & PLAY seven-member wide bench portrait / uploaded official image',
+      primary:'assets/images/tuide-tune-play-wide.jpeg',
+      fallback:'assets/images/tuide-tune-play-full.jpeg',
+      source:'User-supplied TUIDE official image asset',
+      sourcePage:'assets/images/tuide-bts-instagram-source.jpeg'
     },
     tuideReference: {
       selector: '.ssp-tuide-reference img[alt="TUIDE group"]',
-      id:'TUIDE-BENCHMARK-SCOUT-BENCH-HQ', artist:'TUIDE', section:'Reference Scale',
-      originalVisual:'7-member scout-uniform bench portrait / TUNE THE TIDE ASSOCIATION',
-      primary:'https://pub-dc9a9c6ac2a64ba48bce426ced0ac56a.r2.dev/groups/tuide/profile.png?v=1786378994346',
-      fallback:'https://e.usen.com/image/06.%20TUIDE.jpg',
-      source:'TUIDE 7-member high-resolution group portrait / public mirror; official 18 Aug behind-the-scenes source verified',
-      sourcePage:'https://weibo.com/2/detail/5333340077950411'
+      id:'TUIDE-BENCHMARK-TUNEPLAY-UPLOADED-FULL', artist:'TUIDE', section:'Reference Scale',
+      originalVisual:'TUNE & PLAY seven-member bench portrait / uploaded official image',
+      primary:'assets/images/tuide-tune-play-full.jpeg',
+      fallback:'assets/images/tuide-tune-play-wide.jpeg',
+      source:'User-supplied TUIDE official image asset; official Instagram capture stored in repository',
+      sourcePage:'assets/images/tuide-bts-instagram-source.jpeg'
     },
     ourbirthdayCompare: {
       selector: '.tuide-compare img[alt="OURBIRTHDAY seven-member group"]',
@@ -106,5 +106,5 @@
   });
   observer.observe(document.documentElement, {childList:true, subtree:true});
 
-  document.documentElement.dataset.imageRegistry = '18i-reference-fix';
+  document.documentElement.dataset.imageRegistry = '18j-uploaded-tuide-assets';
 })();
