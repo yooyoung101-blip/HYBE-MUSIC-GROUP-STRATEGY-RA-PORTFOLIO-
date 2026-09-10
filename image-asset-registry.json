@@ -1,6 +1,6 @@
 {
   "policy": {
-    "version": "18n-uniform-group-photo-scale",
+    "version": "18o-clear-uniform-group-photos",
     "generated_ai_images": false,
     "duplicate_originals_allowed": false,
     "same_original_different_crop_counts_as_duplicate": true,
@@ -38,7 +38,7 @@
       "fallback": "https://sportsseoulweb.jp/files/user/2026/ic202608248819045781634081567087699671971656290870008386.jpg",
       "source": "TUIDE official promotional group image / Sports Seoul Japan",
       "source_original": "https://sportsseoulweb.jp/files/user/2026/ic202608248819045781634081567087699671971656290870008386.jpg",
-      "size": {"width":900,"height":963}
+      "size": {"width":900,"height":605}
     },
     {
       "artist": "TUIDE",
@@ -77,7 +77,7 @@
       "fallback": "https://chukkae.com/media/images/artists/ourbirthday/283477e28cef3ef14661/1280.webp",
       "source": "INNIT Entertainment official outdoor group photo via Chukkae",
       "source_original": "https://chukkae.com/media/images/artists/ourbirthday/283477e28cef3ef14661/1280.webp",
-      "size": {"width":900,"height":963}
+      "size": {"width":900,"height":605}
     },
     {
       "artist": "ILLIT",

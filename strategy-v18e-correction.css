@@ -38,6 +38,9 @@
   object-position:center!important;
   background:#090b0e;
 }
+[data-route-page="tuide"] .ssp-tuide-reference .ssp-photo-plane{
+  aspect-ratio:900/605!important;
+}
 
 @media(max-width:1024px){
   .fp-single-axis-map .fp-map-wrap{min-height:390px}
@@ -62,7 +65,7 @@
     display:block!important;
   }
   [data-route-page="tuide"] .ssp-tuide-reference .ssp-artist-card:first-child .ssp-photo-plane{
-    aspect-ratio:1/1.07!important;
+    aspect-ratio:900/605!important;
   }
 }
 @media(prefers-reduced-motion:reduce){

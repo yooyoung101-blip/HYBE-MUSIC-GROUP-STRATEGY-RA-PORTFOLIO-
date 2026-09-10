@@ -106,5 +106,5 @@
   });
   observer.observe(document.documentElement, {childList:true, subtree:true});
 
-  document.documentElement.dataset.imageRegistry = '18n-uniform-group-photo-scale';
+  document.documentElement.dataset.imageRegistry = '18o-clear-uniform-group-photos';
 })();
