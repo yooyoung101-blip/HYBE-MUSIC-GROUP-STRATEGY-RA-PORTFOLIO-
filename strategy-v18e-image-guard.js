@@ -39,21 +39,21 @@
     },
     tuideCompare: {
       selector: '.tuide-compare img[alt="TUIDE group from official video thumbnail"]',
-      id:'TUIDE-COMPARE-WEPLAY-USEN-04', artist:'TUIDE', section:'Compare',
-      originalVisual:'WE PLAY promotional seven-member group photo / alternate frame',
-      primary:'https://e.usen.com/image/04.%20TUIDE.jpg',
-      fallback:'https://i.ytimg.com/vi/gZoIV96ipIk/maxresdefault.jpg',
+      id:'TUIDE-COMPARE-TUNEPLAY-UNIFORM', artist:'TUIDE', section:'Compare',
+      originalVisual:'TUNE & PLAY seven-member courtyard portrait / compare-sized crop',
+      primary:'assets/images/tuide-compare-uniform.jpeg',
+      fallback:'https://e.usen.com/image/06.%20TUIDE.jpg',
       source:'ABD-provided TUIDE promotional group photo / USEN',
       sourcePage:'https://e.usen.com/news/news-release/tuide-1st-ep-tune-play.html'
     },
     tuideReference: {
       selector: '.ssp-tuide-reference img[alt="TUIDE group"]',
-      id:'TUIDE-BENCHMARK-TUNEPLAY-CARD-SIZED', artist:'TUIDE', section:'Reference Scale',
-      originalVisual:'TUNE & PLAY seven-member bench portrait / card-sized uploaded asset',
-      primary:'assets/images/tuide-reference-card.jpeg',
-      fallback:'https://e.usen.com/image/06.%20TUIDE.jpg',
-      source:'User-supplied TUIDE official image asset; official Instagram capture stored in repository',
-      sourcePage:'assets/images/tuide-bts-instagram-source.jpeg'
+      id:'TUIDE-BENCHMARK-TUNEPLAY-UNIFORM', artist:'TUIDE', section:'Reference Scale',
+      originalVisual:'TUNE & PLAY seven-member wall portrait / benchmark-sized crop',
+      primary:'assets/images/tuide-benchmark-uniform.jpeg',
+      fallback:'https://sportsseoulweb.jp/files/user/2026/ic202608248819045781634081567087699671971656290870008386.jpg',
+      source:'TUIDE official promotional group image / Sports Seoul Japan',
+      sourcePage:'https://sportsseoulweb.jp/star_topic/id%3D157495'
     },
     ourbirthdayCompare: {
       selector: '.tuide-compare img[alt="OURBIRTHDAY seven-member group"]',
@@ -66,12 +66,12 @@
     },
     ourbirthdayReference: {
       selector: '.ssp-tuide-reference img[alt="OURBIRTHDAY group"]',
-      id:'OURBIRTHDAY-BENCHMARK-OBD-BLUE-HQ', artist:'OURBIRTHDAY', section:'Reference Scale',
-      originalVisual:'7-member blue OBD studio group photo',
-      primary:'https://pbs.twimg.com/media/HPFQMK5XMAAAAr6?format=jpg&name=orig',
-      fallback:'https://www.allkpop.com/upload/2026/08/content/081628/1786220918-image.png',
-      source:'OURBIRTHDAY official group visual / original-resolution social image',
-      sourcePage:'https://app.fans/community/ourbirthday/media/gspplenjiv'
+      id:'OURBIRTHDAY-BENCHMARK-OUTDOOR-UNIFORM', artist:'OURBIRTHDAY', section:'Reference Scale',
+      originalVisual:'7-member official outdoor group photo / benchmark-sized crop',
+      primary:'assets/images/ourbirthday-benchmark-uniform.jpeg',
+      fallback:'https://chukkae.com/media/images/artists/ourbirthday/283477e28cef3ef14661/1280.webp',
+      source:'INNIT Entertainment official outdoor group photo via Chukkae',
+      sourcePage:'https://chukkae.com/artists/ourbirthday'
     },
     twsJapanBenchmark: {
       selector: '.ssp-tws-benchmark img[alt="TWS group"]',
@@ -106,5 +106,5 @@
   });
   observer.observe(document.documentElement, {childList:true, subtree:true});
 
-  document.documentElement.dataset.imageRegistry = '18m-card-sized-tuide-reference';
+  document.documentElement.dataset.imageRegistry = '18n-uniform-group-photo-scale';
 })();

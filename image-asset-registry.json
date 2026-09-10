@@ -1,6 +1,6 @@
 {
   "policy": {
-    "version": "18m-card-sized-tuide-reference",
+    "version": "18n-uniform-group-photo-scale",
     "generated_ai_images": false,
     "duplicate_originals_allowed": false,
     "same_original_different_crop_counts_as_duplicate": true,
@@ -21,22 +21,23 @@
     {
       "artist": "TUIDE",
       "role": "competitive-comparison",
-      "asset_id": "TUIDE-COMPARE-WEPLAY-USEN-04",
-      "original_visual": "WE PLAY promotional seven-member group photo / alternate frame",
-      "primary": "https://e.usen.com/image/04.%20TUIDE.jpg",
-      "fallback": "https://i.ytimg.com/vi/gZoIV96ipIk/maxresdefault.jpg",
-      "source": "ABD-provided TUIDE promotional group photo / USEN"
+      "asset_id": "TUIDE-COMPARE-TUNEPLAY-UNIFORM",
+      "original_visual": "TUNE & PLAY seven-member courtyard portrait / compare-sized crop",
+      "primary": "assets/images/tuide-compare-uniform.jpeg",
+      "fallback": "https://e.usen.com/image/06.%20TUIDE.jpg",
+      "source": "ABD-provided TUIDE promotional group photo / USEN",
+      "source_original": "https://e.usen.com/image/06.%20TUIDE.jpg",
+      "size": {"width":900,"height":605}
     },
     {
       "artist": "TUIDE",
       "role": "historical-benchmark",
-      "asset_id": "TUIDE-BENCHMARK-TUNEPLAY-CARD-SIZED",
-      "original_visual": "TUNE & PLAY seven-member bench portrait / card-sized uploaded asset",
-      "primary": "assets/images/tuide-reference-card.jpeg",
-      "fallback": "https://e.usen.com/image/06.%20TUIDE.jpg",
-      "source": "User-supplied TUIDE official image asset; official Instagram capture stored in repository",
-      "source_asset": "assets/images/tuide-bts-instagram-source.jpeg",
-      "source_original": "assets/images/tuide-tune-play-full.jpeg",
+      "asset_id": "TUIDE-BENCHMARK-TUNEPLAY-UNIFORM",
+      "original_visual": "TUNE & PLAY seven-member wall portrait / benchmark-sized crop",
+      "primary": "assets/images/tuide-benchmark-uniform.jpeg",
+      "fallback": "https://sportsseoulweb.jp/files/user/2026/ic202608248819045781634081567087699671971656290870008386.jpg",
+      "source": "TUIDE official promotional group image / Sports Seoul Japan",
+      "source_original": "https://sportsseoulweb.jp/files/user/2026/ic202608248819045781634081567087699671971656290870008386.jpg",
       "size": {"width":900,"height":963}
     },
     {
@@ -70,12 +71,13 @@
     {
       "artist": "OURBIRTHDAY",
       "role": "historical-benchmark",
-      "asset_id": "OURBIRTHDAY-BENCHMARK-OBD-BLUE-HQ",
-      "original_visual": "7-member blue OBD studio group photo",
-      "primary": "https://pbs.twimg.com/media/HPFQMK5XMAAAAr6?format=jpg&name=orig",
-      "fallback": "https://www.allkpop.com/upload/2026/08/content/081628/1786220918-image.png",
-      "source": "OURBIRTHDAY official group visual / original-resolution social image",
-      "crop": {"desktop":"center 42%","tablet":"center 42%","mobile":"center 40%"}
+      "asset_id": "OURBIRTHDAY-BENCHMARK-OUTDOOR-UNIFORM",
+      "original_visual": "7-member official outdoor group photo / benchmark-sized crop",
+      "primary": "assets/images/ourbirthday-benchmark-uniform.jpeg",
+      "fallback": "https://chukkae.com/media/images/artists/ourbirthday/283477e28cef3ef14661/1280.webp",
+      "source": "INNIT Entertainment official outdoor group photo via Chukkae",
+      "source_original": "https://chukkae.com/media/images/artists/ourbirthday/283477e28cef3ef14661/1280.webp",
+      "size": {"width":900,"height":963}
     },
     {
       "artist": "ILLIT",

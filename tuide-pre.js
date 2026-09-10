@@ -180,7 +180,7 @@
         <div class="tuide-compare-intro">
           <article class="tuide-artist">
             <div class="tuide-artist-photo">
-              <img src="https://i.ytimg.com/vi/pHciG9_2xXM/maxresdefault.jpg" alt="TUIDE group from official video thumbnail" loading="lazy">
+              <img src="assets/images/tuide-compare-uniform.jpeg" alt="TUIDE group from official video thumbnail" loading="lazy">
             </div>
             <div><span>HYBE / ABD</span><h3>TUIDE</h3><p>7 members · debut 24 Aug 2026</p></div>
           </article>

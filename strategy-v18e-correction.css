@@ -26,15 +26,15 @@
 [data-route-page="tuide"] .tuide-compare .tuide-artist:hover img{
   filter:grayscale(0) brightness(1) contrast(1.01)!important;
 }
-/* The supplied TUIDE scout portrait is a wide seven-member frame. Keep all members visible. */
+/* V18N UNIFORM PHOTO QA — let matched image assets fill their existing frames. */
 [data-route-page="tuide"] .tuide-compare img[alt="TUIDE group from official video thumbnail"]{
-  object-fit:contain!important;
-  object-position:center!important;
+  object-fit:cover!important;
+  object-position:center 48%!important;
   background:#0a0c0f;
 }
-/* OURBIRTHDAY benchmark B is also wide. Do not sacrifice edge members to a square crop. */
+[data-route-page="tuide"] .ssp-tuide-reference img[alt="TUIDE group"],
 [data-route-page="tuide"] .ssp-tuide-reference img[alt="OURBIRTHDAY group"]{
-  object-fit:contain!important;
+  object-fit:cover!important;
   object-position:center!important;
   background:#090b0e;
 }
@@ -57,6 +57,13 @@
   [data-route-page="tuide"] .tuide-compare img[alt="OURBIRTHDAY seven-member group"]{object-position:center 44%}
   [data-route-page="tws"] .ssp-tws-benchmark img[alt="TWS group"]{object-position:center 36%}
   [data-route-page="tuide"] .tuide-compare .tuide-artist-photo{background:#0a0c0f}
+  [data-route-page="tuide"] .ssp-tuide-reference .ssp-artist-card:first-child{
+    grid-column:auto!important;
+    display:block!important;
+  }
+  [data-route-page="tuide"] .ssp-tuide-reference .ssp-artist-card:first-child .ssp-photo-plane{
+    aspect-ratio:1/1.07!important;
+  }
 }
 @media(prefers-reduced-motion:reduce){
   .fp-single-axis-map .fp-map-point{transition:none!important}
