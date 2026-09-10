@@ -10,7 +10,7 @@
 <body>
 <script>
 (async()=>{
-  const V='18o';
+  const V='18p';
   const html=await fetch(`index-source.html?v=${V}`,{cache:'no-store'}).then(r=>r.text());
   const doc=new DOMParser().parseFromString(html,'text/html');
 

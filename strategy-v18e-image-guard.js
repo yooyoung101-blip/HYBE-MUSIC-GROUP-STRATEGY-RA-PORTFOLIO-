@@ -49,11 +49,11 @@
     tuideReference: {
       selector: '.ssp-tuide-reference img[alt="TUIDE group"]',
       id:'TUIDE-BENCHMARK-TUNEPLAY-UNIFORM', artist:'TUIDE', section:'Reference Scale',
-      originalVisual:'TUNE & PLAY seven-member wall portrait / benchmark-sized crop',
+      originalVisual:'TUNE & PLAY seven-member courtyard group photo / card-size fitted asset',
       primary:'assets/images/tuide-benchmark-uniform.jpeg',
-      fallback:'https://sportsseoulweb.jp/files/user/2026/ic202608248819045781634081567087699671971656290870008386.jpg',
-      source:'TUIDE official promotional group image / Sports Seoul Japan',
-      sourcePage:'https://sportsseoulweb.jp/star_topic/id%3D157495'
+      fallback:'https://e.usen.com/image/01.%20TUIDE%5B4%5D.jpg',
+      source:'ABD-provided TUIDE promotional group photo / USEN',
+      sourcePage:'https://e.usen.com/news/news-release/hybe-tuide24the-1st-ep-tune-play.html'
     },
     ourbirthdayCompare: {
       selector: '.tuide-compare img[alt="OURBIRTHDAY seven-member group"]',
@@ -67,7 +67,7 @@
     ourbirthdayReference: {
       selector: '.ssp-tuide-reference img[alt="OURBIRTHDAY group"]',
       id:'OURBIRTHDAY-BENCHMARK-OUTDOOR-UNIFORM', artist:'OURBIRTHDAY', section:'Reference Scale',
-      originalVisual:'7-member official outdoor group photo / benchmark-sized crop',
+      originalVisual:'7-member official outdoor group photo / card-size fitted asset',
       primary:'assets/images/ourbirthday-benchmark-uniform.jpeg',
       fallback:'https://chukkae.com/media/images/artists/ourbirthday/283477e28cef3ef14661/1280.webp',
       source:'INNIT Entertainment official outdoor group photo via Chukkae',
@@ -106,5 +106,5 @@
   });
   observer.observe(document.documentElement, {childList:true, subtree:true});
 
-  document.documentElement.dataset.imageRegistry = '18o-clear-uniform-group-photos';
+  document.documentElement.dataset.imageRegistry = '18p-previous-size-face-safe-photos';
 })();

@@ -26,7 +26,7 @@
 [data-route-page="tuide"] .tuide-compare .tuide-artist:hover img{
   filter:grayscale(0) brightness(1) contrast(1.01)!important;
 }
-/* V18N UNIFORM PHOTO QA — let matched image assets fill their existing frames. */
+/* V18P PHOTO QA — keep the previous card size while using face-safe fitted assets. */
 [data-route-page="tuide"] .tuide-compare img[alt="TUIDE group from official video thumbnail"]{
   object-fit:cover!important;
   object-position:center 48%!important;
@@ -37,9 +37,6 @@
   object-fit:cover!important;
   object-position:center!important;
   background:#090b0e;
-}
-[data-route-page="tuide"] .ssp-tuide-reference .ssp-photo-plane{
-  aspect-ratio:900/605!important;
 }
 
 @media(max-width:1024px){
@@ -65,7 +62,7 @@
     display:block!important;
   }
   [data-route-page="tuide"] .ssp-tuide-reference .ssp-artist-card:first-child .ssp-photo-plane{
-    aspect-ratio:900/605!important;
+    aspect-ratio:1/1.07!important;
   }
 }
 @media(prefers-reduced-motion:reduce){
