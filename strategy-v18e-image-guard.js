@@ -48,12 +48,12 @@
     },
     tuideReference: {
       selector: '.ssp-tuide-reference img[alt="TUIDE group"]',
-      id:'TUIDE-BENCHMARK-TUNEPLAY-UNIFORM', artist:'TUIDE', section:'Reference Scale',
-      originalVisual:'TUNE & PLAY seven-member courtyard group photo / card-size fitted asset',
-      primary:'assets/images/tuide-benchmark-uniform.jpeg',
-      fallback:'https://e.usen.com/image/01.%20TUIDE%5B4%5D.jpg',
-      source:'ABD-provided TUIDE promotional group photo / USEN',
-      sourcePage:'https://e.usen.com/news/news-release/hybe-tuide24the-1st-ep-tune-play.html'
+      id:'TUIDE-BENCHMARK-SELFIE-V18Q', artist:'TUIDE', section:'Reference Scale',
+      originalVisual:'Seven-member close group selfie / face-safe card crop',
+      primary:'assets/images/tuide-benchmark-selfie-v18q.jpeg',
+      fallback:'https://media.trilltrill.jp/articles/4931908/featured-image.f8ed2b5e2f561bb5916919c1526de86f?w=1200',
+      source:'ABD-provided TUIDE group image via TRILL',
+      sourcePage:'https://trilltrill.jp/articles/4931908'
     },
     ourbirthdayCompare: {
       selector: '.tuide-compare img[alt="OURBIRTHDAY seven-member group"]',
@@ -66,12 +66,12 @@
     },
     ourbirthdayReference: {
       selector: '.ssp-tuide-reference img[alt="OURBIRTHDAY group"]',
-      id:'OURBIRTHDAY-BENCHMARK-OUTDOOR-UNIFORM', artist:'OURBIRTHDAY', section:'Reference Scale',
-      originalVisual:'7-member official outdoor group photo / card-size fitted asset',
-      primary:'assets/images/ourbirthday-benchmark-uniform.jpeg',
-      fallback:'https://chukkae.com/media/images/artists/ourbirthday/283477e28cef3ef14661/1280.webp',
-      source:'INNIT Entertainment official outdoor group photo via Chukkae',
-      sourcePage:'https://chukkae.com/artists/ourbirthday'
+      id:'OURBIRTHDAY-BENCHMARK-STAIR-V18Q', artist:'OURBIRTHDAY', section:'Reference Scale',
+      originalVisual:'Seven-member stair group photo / face-safe card crop',
+      primary:'assets/images/ourbirthday-benchmark-stair-v18q.jpeg',
+      fallback:'https://pub-dc9a9c6ac2a64ba48bce426ced0ac56a.r2.dev/groups/ourbirthday/_live/profile_1788461197055_3644d2b7-3f98-4d52-b837-406275d6c992.png',
+      source:'OURBIRTHDAY profile group image via Kpopping',
+      sourcePage:'https://www.kpopping.com/profiles/group/ourbirthday'
     },
     twsJapanBenchmark: {
       selector: '.ssp-tws-benchmark img[alt="TWS group"]',
@@ -106,5 +106,5 @@
   });
   observer.observe(document.documentElement, {childList:true, subtree:true});
 
-  document.documentElement.dataset.imageRegistry = '18p-previous-size-face-safe-photos';
+  document.documentElement.dataset.imageRegistry = '18q-no-duplicate-no-distortion';
 })();
